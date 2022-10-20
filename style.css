@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+button {
+  background: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #ccc;
+  transition: background-color 0.3s ease;
+  text-transform: capitalize;
+}
+
+button:hover {
+  background-color: #ffff88;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.nav .logo {
+  color: #222;
+  text-decoration: none;
+}
+
+.add-btn{
+  margin-right: 0.6rem;
+}
+
+.nav .logo h1 {
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size: 3.4rem;
+}
+
+.container {
+  padding: 16rem 2rem 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  color: #222;
+}
+
+.top {
+  position: relative;
+  padding: 2rem;
+  background-color: #ffff00;
+
+}
+
+.top h2{
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size:2rem;
+  color: #222;
+ 
+}
+
+.note-remove {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+  padding: 0.7rem;
+}
+
+.bottom {
+  padding: 2rem;
+  background-color: #ffff88;
+}
+
+.bottom p {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  line-height: 170%;
+  color: #222;
+  text-align: justify;
+}
+
+.popup {
+  display: none;
+  flex-direction: column;
+  gap: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  padding: 3rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  z-index:10;
+  background-color: #fff;
+}
+
+.popup select,
+.popup textarea {
+  padding: 0.8rem;
+  border: 0;
+  background: 0;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.8rem;
+  outline: 0;
+}
+
+.popup textarea {
+  max-width: 100%;
+  max-height: 15rem;
+}
+
+.popup label {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.popup h3 {
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #222;
+}
+
+.error{
+  color:#ff0000;
+  font-size:1.5rem;
+  visibility: hidden;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.popup button {
+  display: inline-block;
+}
+
+.popup button:first-of-type {
+  margin-right: 0.4rem;
+}
